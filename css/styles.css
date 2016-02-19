@@ -1,3 +1,4 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
 *, *:after, *:before {
   box-sizing: border-box; }
 
@@ -42,7 +43,48 @@ main {
   -webkit-flex: 0 0 200px;
   -ms-flex: 0 0 200px;
   flex: 0 0 200px;
-  margin-bottom: 60px; }
+  margin-bottom: 60px;
+  cursor: pointer; }
+
+#lightbox {
+  width: 100%;
+  height: 100vh;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9); }
+  #lightbox__content {
+    width: 80%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    margin: 80px auto 0;
+    opacity: 1; }
+    #lightbox__content img {
+      max-width: 60%;
+      width: 100%;
+      opacity: 1;
+      z-index: 999; }
+    #lightbox__content figcaption {
+      width: 600px;
+      padding: 40px 0;
+      font-size: 1.1rem;
+      color: white; }
+    #lightbox__content .fa {
+      font-size: 3rem;
+      color: white;
+      cursor: pointer; }
 
 .sr-only {
   position: absolute;
