@@ -85,4 +85,18 @@ $(function() {
   $("#close-lightbox").click(function() {
     $("#lightbox").hide();
   });
+
+  // Filtering functionality for search input
+  $("#search").on("keyup", function() {
+    var searchText = $("#search").val();
+
+    $.each($photos, function(index, element) {
+      var caption = $(this).attr('title');
+      if (caption.indexOf(searchText) === -1) {
+        $(this).hide();
+      } else {
+        $(this).show();
+      }
+    });
+  });
 });
