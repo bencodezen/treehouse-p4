@@ -5,6 +5,7 @@
 $(function() {
   // Declare scaffolding for lightbox
   var lightboxHTML = '<div id="lightbox">';
+  lightboxHTML += '<i class="fa fa-times" id="close-lightbox"></i>';
   lightboxHTML += '<figure id="lightbox__content">';
   lightboxHTML += '<i class="fa fa-chevron-left" id="prev-img"></i>';
   lightboxHTML += '<span class="sr-only">Previous Image</span>';
@@ -78,5 +79,10 @@ $(function() {
   // Bind changeImage to Previous button
   $("#prev-img").click(function() {
     changeImage("prev");
+  });
+
+  // Exit lightbox
+  $("#close-lightbox").click(function() {
+    $("#lightbox").hide();
   });
 });
