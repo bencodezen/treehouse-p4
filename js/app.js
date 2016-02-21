@@ -12,7 +12,7 @@ $(function() {
   lightboxHTML += '<img>';
   lightboxHTML += '<i class="fa fa-chevron-right" id="next-img"></i>';
   lightboxHTML += '<span class="sr-only">Next Image</span>';
-  lightboxHTML += '<figcaption></figcaption>'
+  lightboxHTML += '<figcaption></figcaption>';
   lightboxHTML += '</figure>';
   lightboxHTML += '</div>';
 
