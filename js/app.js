@@ -7,11 +7,13 @@ $(function() {
   var lightboxHTML = '<div id="lightbox">';
   lightboxHTML += '<i class="fa fa-times" id="close-lightbox"></i>';
   lightboxHTML += '<figure id="lightbox__content">';
+  lightboxHTML += '<div id="lightbox__image-row">';
   lightboxHTML += '<i class="fa fa-chevron-left" id="prev-img"></i>';
   lightboxHTML += '<span class="sr-only">Previous Image</span>';
   lightboxHTML += '<img>';
   lightboxHTML += '<i class="fa fa-chevron-right" id="next-img"></i>';
   lightboxHTML += '<span class="sr-only">Next Image</span>';
+  lightboxHTML += '</div>';
   lightboxHTML += '<figcaption></figcaption>';
   lightboxHTML += '</figure>';
   lightboxHTML += '</div>';

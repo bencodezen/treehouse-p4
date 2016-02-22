@@ -90,18 +90,28 @@ main {
     margin: 100px auto 0;
     opacity: 1;
 
-    img {
-      max-width: 60%;
-      width: 100%;
-      opacity: 1;
-      z-index: 999;
-    }
+    // img {
+    //   max-width: 60%;
+    //   width: 100%;
+    //   opacity: 1;
+    //   z-index: 999;
+    // }
 
     figcaption {
       width: 600px;
       padding: 40px 0;
       font-size: 1.1rem;
       color: white;
+    }
+  }
+
+  &__image-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    img {
+      width: 60%;
     }
   }
 

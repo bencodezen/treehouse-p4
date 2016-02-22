@@ -81,16 +81,23 @@ main {
     position: relative;
     margin: 100px auto 0;
     opacity: 1; }
-    #lightbox__content img {
-      max-width: 60%;
-      width: 100%;
-      opacity: 1;
-      z-index: 999; }
     #lightbox__content figcaption {
       width: 600px;
       padding: 40px 0;
       font-size: 1.1rem;
       color: white; }
+  #lightbox__image-row {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    #lightbox__image-row img {
+      width: 60%; }
   #lightbox .fa {
     font-size: 3rem;
     color: white;
